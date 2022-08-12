@@ -10,7 +10,7 @@ const Navbar = styled.div`
   justify-content: space-between;
   opacity: 1;
   width: 70vw;
-  height: 8vh;
+  height: 7vh;
   position: fixed;
   background: transparent;
 `;
@@ -34,7 +34,7 @@ const Button = styled.button`
     left: 0;
     width: 0;
     height: 4px;
-    background: pink;
+    background: #caa1d6;
     transition: width 0.3s;
   }
 
@@ -44,8 +44,8 @@ const Button = styled.button`
 `;
 const Icon = styled.svg`
   fill: white;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 `;
 const Buttons = styled.div`
   display: flex;
@@ -57,11 +57,13 @@ const Buttons = styled.div`
 const Text = styled.p`
   color: white;
   font-size: 1.2rem;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
+  font-family: 'Roboto Slab', serif;
 `;
 const Title = styled.p`
-  color: white;
-  font-size: 1.2rem;
+  color: #caa1d6;
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
 `;
 const Nav = () => {
   return (
