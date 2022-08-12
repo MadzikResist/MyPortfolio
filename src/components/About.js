@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import StarsComponent from 'components/Stars';
+import Nav from 'components/Nav';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -26,6 +27,7 @@ const About = () => {
   return (
     <Container>
       <StarsComponent />
+      <Nav />
     </Container>
   );
 };

@@ -49,7 +49,7 @@ const Stars = styled.div`
 `;
 
 const StarsComponent = () => {
-  let arrOfStars = Array(150)
+  let arrOfStars = Array(70)
     .fill()
     .map((_, i) => i + 1);
   arrOfStars = arrOfStars.map(() => {

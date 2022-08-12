@@ -1,11 +1,14 @@
-import * as React from "react"
+import * as React from 'react';
+import StarsComponent from 'components/Stars';
+import Nav from 'components/Nav';
 
 const Piano = () => {
-    return (
-        <>
-            <h1>hello roman</h1>
-        </>
-    )
-}
+  return (
+    <>
+      <StarsComponent />
+      <Nav />
+    </>
+  );
+};
 
-export default Piano
+export default Piano;

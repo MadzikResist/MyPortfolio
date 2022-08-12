@@ -6,11 +6,16 @@ import Nav from 'components/Nav';
 
 const StyledWrapper = styled.div`
   width: 100%;
-  height: 70vh;
-  background: url(${background}) center/cover no-repeat;
+  height: 84vh;
+  // background: url(${background}) center/cover no-repeat;
+  background: #120f26;
+  margin-top: 16vh;
 `;
 const Container = styled.div`
   width: 100vw;
+`;
+const Title = styled.h1`
+  color: #caa1d6;
 `;
 const Home = () => {
   return (
@@ -18,7 +23,9 @@ const Home = () => {
       <StarsComponent />
       <Nav />
       <Container>
-        <StyledWrapper></StyledWrapper>
+        <StyledWrapper>
+          <Title>Hello noobs</Title>
+        </StyledWrapper>
       </Container>
     </>
   );
