@@ -6,10 +6,13 @@ import Nav from 'components/Nav';
 
 const StyledWrapper = styled.div`
   width: 100%;
-  height: 84vh;
+  height: 100vh;
   // background: url(${background}) center/cover no-repeat;
   background: #120f26;
-  margin-top: 16vh;
+  margin-top: 80px;
+  @media (min-width: 768px) {
+    margin-top: 400px;
+  }
 `;
 const Container = styled.div`
   width: 100vw;

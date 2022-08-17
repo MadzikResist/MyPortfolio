@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { keyframes } from 'styled-components';
+import background from 'images/background.png';
 
 const StarsAnimation = keyframes`
   0% {
@@ -33,7 +34,22 @@ const StarsAnimation = keyframes`
     opacity: 0.1;
   }
 `;
-
+const ContainerBackground = styled.div`
+  width: 100vw;
+  height: 100%;
+  background: url(${background}) center/cover no-repeat;
+  background: #120f26;
+  margin-top: 20%;
+  @media (min-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+    background: url(${background}) center/cover no-repeat;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+  }
+`;
 const Stars = styled.div`
   opacity: 0;
   width: 3px;
@@ -60,11 +76,11 @@ const StarsComponent = () => {
     };
   });
   return (
-    <>
+    <ContainerBackground>
       {arrOfStars.map((item) => {
         return <Stars {...item} />;
       })}
-    </>
+    </ContainerBackground>
   );
 };
 
