@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled, { keyframes } from 'styled-components';
-import background from 'images/background.png';
 
 const StarsAnimation = keyframes`
   0% {
@@ -36,14 +35,13 @@ const StarsAnimation = keyframes`
 `;
 const ContainerBackground = styled.div`
   width: 100vw;
-  height: 100%;
-  background: url(${background}) center/cover no-repeat;
-  background: #120f26;
+  height: 200vh;
+  position: fixed;
   margin-top: 20%;
+  z-index: 15;
   @media (min-width: 768px) {
     width: 100vw;
     height: 100vh;
-    background: url(${background}) center/cover no-repeat;
     position: fixed;
     left: 0;
     top: 0;
