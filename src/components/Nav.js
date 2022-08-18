@@ -115,7 +115,6 @@ const Text = styled.p`
   color: white;
   font-size: 1.1rem;
   margin-top: 8px;
-  font-family: 'Roboto Slab', serif;
   @media (min-width: 768px) {
     margin-top: 3px;
     font-size: 1.2rem;
@@ -128,7 +127,6 @@ const Text = styled.p`
 const Title = styled.p`
   color: #caa1d6;
   font-size: 1.3rem;
-  font-family: 'Roboto Slab', serif;
   @media (min-width: 768px) {
     font-size: 2rem;
   }

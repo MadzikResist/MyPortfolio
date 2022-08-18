@@ -2,43 +2,46 @@ import * as React from 'react';
 import StarsComponent from 'components/Stars';
 import styled from 'styled-components';
 import background2 from 'images/background2.png';
-import myPhoto from 'images/myPhoto.jpg';
+import photo2 from 'images/photo2.png';
 import Nav from 'components/Nav';
 import Typewriter from 'typewriter-effect';
 
 const Container = styled.div`
   width: 100vw;
-  background: url(${background2}) center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   @media (min-width: 768px) {
-    background: url(${background2}) center/cover;
-    height: 100vh;
+    height: auto;
+  }
+  @media (min-width: 1200px) {
   }
   @media (min-width: 1400px) {
-    height: 60vh;
   }
 `;
 const StyledWrapper = styled.div`
-  width: 80%;
-  margin-top: 16vh;
+  margin-top: 69px;
   gap: 16px;
+  background: url(${background2}) center/cover;
+  width: 100%;
+  padding: 0 10%;
+  height: auto;
 
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-top: 0;
+    background: url(${background2}) center/cover;
     height: 80vh;
-    width: 90%;
   }
   @media (min-width: 1200px) {
-    width: 80%;
+    height: 70vh;
   }
   @media (min-width: 1400px) {
-    width: 80%;
-    margin-top: 0;
+    height: 70vh;
   }
 `;
 
@@ -46,7 +49,6 @@ const Title = styled.p`
   //color: #caa1d6;
   color: white;
   font-size: 1.2rem;
-  font-family: 'Roboto Slab', serif;
   position: relative;
   z-index: 10;
   @media (min-width: 768px) {
@@ -56,19 +58,27 @@ const Title = styled.p`
 const Name = styled.h1`
   color: #caa1d6;
   font-size: 2rem;
-  font-family: 'Roboto Slab', serif;
   position: relative;
   z-index: 10;
 `;
 const TextContainer = styled.div`
+  position: relative;
+  width: 100%;
+  background: none;
+  z-index: 15;
+  margin-top: 64px;
   @media (min-width: 768px) {
     position: relative;
-    width: 80%;
+    width: 50%;
     background: none;
     z-index: 15;
-    margin-top: 10vh;
+    margin-top: 0;
   }
   @media (min-width: 1200px) {
+    position: relative;
+    background: none;
+    z-index: 15;
+    margin-top: 0;
     width: 50%;
   }
   @media (min-width: 1400px) {
@@ -76,7 +86,7 @@ const TextContainer = styled.div`
     background: none;
     z-index: 15;
     margin-top: 0;
-    width: 50%;
+    width: 40%;
   }
 `;
 const TypeWriterStyle = styled.h1`
@@ -86,33 +96,42 @@ const TypeWriterStyle = styled.h1`
   opacity: 40%;
   margin-top: 8vh;
   @media (min-width: 768px) {
-    font-size: 2.9rem;
+    font-size: 2.4rem;
   }
 `;
 const Photo = styled.div`
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  width: 260px;
-  height: 400px;
-  background: url(${myPhoto}) center/cover no-repeat;
+  width: 300px;
+  height: 300px;
+  background: url(${photo2}) center/cover no-repeat;
   position: relative;
   z-index: 15;
   border-radius: 14px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
   @media (min-width: 768px) {
     left: 0;
     transform: translateX(0);
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     margin-top: 32px;
   }
+  @media (min-width: 1200px) {
+    margin-top: 96px;
+    width: 400px;
+    height: 400px;
+  }
   @media (min-width: 1400px) {
-    margin-top: 0;
+    margin-top: 96px;
+    width: 450px;
+    height: 450px;
   }
 `;
 const Introduce = styled.div`
   width: 100%;
-  margin-top: 20%;
   position: relative;
   height: 100vh;
 
@@ -127,14 +146,14 @@ const Introduce = styled.div`
     //background: rgb(43, 21, 70);
     //background: linear-gradient(0deg, rgba(43, 21, 70, 1) 0%, rgba(25, 7, 41, 1) 100%);
   }
+  @media (min-width: 1200px) {
+  }
   @media (min-width: 1400px) {
-    margin-top: 10%;
   }
 `;
 const About = styled.h1`
   color: #caa1d6;
   font-size: 2.5rem;
-  font-family: 'Roboto Slab', serif;
   position: relative;
   z-index: 10;
   text-align: center;
