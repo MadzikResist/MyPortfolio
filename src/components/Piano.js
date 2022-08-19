@@ -33,18 +33,11 @@ const AudioContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0% 0;
+  padding: 0;
   margin-top: 69px;
 
   @media (min-width: 768px) {
-    width: 100%;
-    display: flex;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 5% 10%;
-    margin-top: 69px;
   }
 `;
 const Title = styled.h1`
@@ -58,6 +51,7 @@ const Title = styled.h1`
 const TitlePiano = styled.h2`
   color: #caa1d6;
   font-size: 1.8rem;
+  text-align: center;
 `;
 const PianoBox = styled.div`
   border: 1px solid white;
@@ -66,42 +60,30 @@ const PianoBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
-  margin-top: 16px;
-  padding: 8px;
+  padding: 32px 8px 64px 8px;
   -webkit-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   -moz-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   @media (min-width: 768px) {
-    border: 1px solid white;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 32px;
-    margin-top: 16px;
-    padding: 32px;
+    padding: 32px 32px 64px 32px;
+    height: 100%;
   }
 `;
 const PianoBoxContainer = styled.div`
-  width: 90%;
+  width: 85%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  height: auto;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   margin-top: 16px;
   margin-bottom: 16px;
+  gap: 32px;
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    display: grid;
-    height: auto;
-    padding: 0 10%;
-    gap: 32px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    padding: 0;
+    gap: 40px;
+    grid-auto-rows: 1fr;
   }
 `;
 const IconFooter = styled.svg`
