@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { memo } from 'react';
 
 const StarsAnimation = keyframes`
   0% {
@@ -82,4 +83,4 @@ const StarsComponent = () => {
   );
 };
 
-export default StarsComponent;
+export default memo(StarsComponent);

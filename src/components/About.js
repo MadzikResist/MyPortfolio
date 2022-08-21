@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-// import StarsComponent from 'components/Stars';
+import StarsComponent from 'components/Stars';
 import Nav from 'components/Nav';
 import myPhoto from 'images/myPhoto.jpg';
 
@@ -243,7 +243,7 @@ const Footer = styled.div`
 const About = () => {
   return (
     <>
-      {/*<StarsComponent />*/}
+      <StarsComponent />
       <Nav />
       <Container>
         <KnowMeContainer>
