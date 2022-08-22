@@ -78,6 +78,7 @@ const PianoBoxContainer = styled.div`
   margin-top: 16px;
   margin-bottom: 16px;
   gap: 32px;
+  z-index: 15;
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -108,7 +109,7 @@ const Piano = () => {
   return (
     <>
       <Nav />
-      {/*<StarsComponent />*/}
+      <StarsComponent />
       <Container>
         <AudioContainer>
           <Title>

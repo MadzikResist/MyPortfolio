@@ -142,6 +142,7 @@ const ExperienceBox = styled.div`
   justify-content: center;
   margin-bottom: 32px;
   margin-top: 16px;
+  z-index: 15;
 
   -webkit-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   -moz-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
@@ -217,6 +218,7 @@ const SkillBox = styled.div`
   align-items: center;
   justify-content: center;
   padding: 30% 0;
+  z-index: 15;
   -webkit-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   -moz-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
