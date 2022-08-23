@@ -240,6 +240,7 @@ const Footer = styled.div`
   margin-top: 32px;
   @media (min-width: 768px) {
     margin-top: 10%;
+    padding-bottom: 8px;
   }
 `;
 const About = () => {
