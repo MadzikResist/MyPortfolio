@@ -2,7 +2,6 @@ import * as React from 'react';
 import StarsComponent from 'components/Stars';
 import Nav from 'components/Nav';
 import styled from 'styled-components';
-import recipeFinderMobile from 'images/recipeFinderMobile.png';
 import recipeFinderScreen from 'images/recipeFinderScreen.png';
 import nicePage2 from 'images/nicePage2.png';
 import pianoGame from 'images/pianoGame.png';
@@ -134,6 +133,7 @@ const Button = styled.button`
   text-align: center;
   font-weight: 600;
   transition: ease-in 0.1s;
+  cursor: pointer;
 
   @media (min-width: 400px) {
     width: 100px;

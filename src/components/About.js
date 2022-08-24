@@ -224,6 +224,7 @@ const SkillBox = styled.div`
   -webkit-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   -moz-box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
   box-shadow: 0 1px 12px -2px rgba(135, 70, 144, 1);
+
   @media (min-width: 768px) {
     padding: 15% 0;
     width: 100%;

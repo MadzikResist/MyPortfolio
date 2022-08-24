@@ -2,9 +2,11 @@ import * as React from 'react';
 import StarsComponent from 'components/Stars';
 import Nav from 'components/Nav';
 import styled from 'styled-components';
-import resume from 'images/CV.pdf';
+import resume from 'images/Magdalena Szpitalna CV.pdf';
+import resumePL from 'images/Magdalena Szpitalna CV_PL.pdf';
 import cvPhotoMobile from 'images/cvPhotoMobile.png';
 import Footer from 'components/Footer';
+import { useState } from 'react';
 
 const Container = styled.div`
   width: 100vw;
@@ -32,8 +34,9 @@ const Title = styled.h2`
   text-align: center;
   margin-bottom: 16px;
   @media (min-width: 769px) {
-    margin-top: 40px;
+    margin-top: 72px;
     font-size: 2rem;
+    margin-bottom: 0;
   }
 `;
 const Resume = styled.object`
@@ -43,6 +46,7 @@ const Resume = styled.object`
   -webkit-box-shadow: -1px -4px 77px -1px rgba(103, 11, 133, 1);
   -moz-box-shadow: -1px -4px 77px -1px rgba(103, 11, 133, 1);
   box-shadow: -1px -4px 77px -1px rgba(103, 11, 133, 1);
+  z-index: 15;
 
   @media (min-width: 769px) {
     height: 613pt;
@@ -101,7 +105,7 @@ const Button = styled.button`
   background: #111;
   cursor: pointer;
   position: relative;
-  z-index: 0;
+  z-index: 15;
   border-radius: 10px;
   user-select: none;
   -webkit-user-select: none;
@@ -172,24 +176,31 @@ const Button = styled.button`
     margin-top: 32px;
   }
 `;
+
 const CV = () => {
+  const [cvChecked, setCvChecked] = useState(true);
+  const handleClick = () => {
+    setCvChecked((current) => !current);
+  };
+
   return (
     <>
-      {/*<StarsComponent />*/}
+      <StarsComponent />
       <Nav />
       <Container>
         <CVContainer>
+          <Title>
+            My <span style={{ color: '#caa1d6' }}>Resume </span>
+          </Title>
           <TitleButton>
-            <Title>
-              My <span style={{ color: '#caa1d6' }}>Resume </span>
-            </Title>
+            <Button onClick={handleClick}>{cvChecked ? 'Polish' : 'English'}</Button>
             <a download={'Magdalena Szpitalna CV'} href={resume} target="_blank" rel="noreferrer">
               <Button>Download</Button>
             </a>
           </TitleButton>
           <Resume
             aria-label={'Magdalena Szpitalna CV'}
-            data={`${resume}#toolbar=0&navpanes=0&scrollbar=0`}
+            data={`${cvChecked ? resume : resumePL}#toolbar=0&navpanes=0&scrollbar=0`}
             type="application/pdf"
           />
           <ResumeMobile />
