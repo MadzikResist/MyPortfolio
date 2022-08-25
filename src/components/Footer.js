@@ -35,7 +35,7 @@ const Footer = () => {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/magdalena-szpitalna/"
+        href="https://www.linkedin.com/in/magdalena-szpitalna-/"
         target="_blank"
         rel="noreferrer"
         style={{ zIndex: '15' }}
