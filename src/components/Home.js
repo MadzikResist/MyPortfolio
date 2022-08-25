@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import StarsComponent from 'components/Stars';
 import Footer from 'components/Footer';
 import styled from 'styled-components';
@@ -314,6 +314,10 @@ const Icon = styled.svg`
 const Home = () => {
   const form = useRef();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -327,6 +331,7 @@ const Home = () => {
       },
     );
   };
+
   return (
     <>
       <StarsComponent />

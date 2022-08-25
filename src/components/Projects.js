@@ -8,6 +8,7 @@ import pianoGame from 'images/pianoGame.png';
 import nicePage from 'images/nicepage.png';
 import portfolioPhoto from 'images/portfolio.png';
 import Footer from 'components/Footer';
+import { useEffect } from 'react';
 
 const Container = styled.div`
   width: 100vw;
@@ -159,6 +160,10 @@ const ButtonsContainer = styled.div`
 `;
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <StarsComponent />

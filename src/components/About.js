@@ -4,6 +4,7 @@ import StarsComponent from 'components/Stars';
 import Nav from 'components/Nav';
 import myPhoto from 'images/myPhoto.jpg';
 import Footer from 'components/Footer';
+import { useEffect } from 'react';
 
 const Container = styled.div`
   width: 100vw;
@@ -235,6 +236,10 @@ const SkillBox = styled.div`
 `;
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <StarsComponent />

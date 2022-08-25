@@ -7,7 +7,7 @@ import resumePL from 'images/Magdalena Szpitalna CV_PL.pdf';
 import cvPhotoMobile from 'images/cvPhotoMobile.png';
 import cvPhotoMobilePL from 'images/cvPhotoMobilePL.png';
 import Footer from 'components/Footer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Container = styled.div`
   width: 100vw;
@@ -186,6 +186,9 @@ const CV = () => {
   const handleClick = () => {
     setCvChecked((current) => !current);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -198,7 +201,12 @@ const CV = () => {
           </Title>
           <TitleButton>
             <Button onClick={handleClick}>{cvChecked ? 'Polish' : 'English'}</Button>
-            <a download={'Magdalena Szpitalna CV'} href={resume} target="_blank" rel="noreferrer">
+            <a
+              download={'Magdalena Szpitalna CV'}
+              href={cvChecked ? resume : resumePL}
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button>Download</Button>
             </a>
           </TitleButton>

@@ -12,6 +12,7 @@ import LaLaLand from 'audio/LaLaLand.mp3';
 import RiverFlowsInYou from 'audio/RiverFlowsInYou.mp3';
 import styled from 'styled-components';
 import Footer from 'components/Footer';
+import { useEffect } from 'react';
 
 const Container = styled.div`
   width: 100vw;
@@ -90,6 +91,10 @@ const PianoBoxContainer = styled.div`
 `;
 
 const Piano = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Nav />
