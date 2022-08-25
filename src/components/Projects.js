@@ -272,14 +272,14 @@ const Projects = () => {
               <Description>This site</Description>
               <ButtonsContainer>
                 <a
-                  href="https://magdalena-szpitalna-portfolio.netlify.app/"
+                  href="https://github.com/MadzikResist/MyPortfolio"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <Button>Github</Button>
                 </a>
                 <a
-                  href="https://github.com/MadzikResist/MyPortfolio"
+                  href="https://magdalena-szpitalna-portfolio.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
