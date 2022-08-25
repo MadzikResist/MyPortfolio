@@ -249,7 +249,7 @@ const About = () => {
               <Text>
                 Hi! I am <span style={{ color: '#caa1d6' }}>Magdalena Szpitalna </span>from
                 <span style={{ color: '#caa1d6' }}> Poznań.</span> <br />
-                <br />I am 22 years old ICT student at University of Technology in Poznań. <br />
+                <br />I am 22-year-old ICT student at University of Technology in Poznań. <br />
                 <br />
                 In my spare time I play the piano and computer games.
               </Text>
