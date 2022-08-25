@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import resume from 'images/Magdalena Szpitalna CV.pdf';
 import resumePL from 'images/Magdalena Szpitalna CV_PL.pdf';
 import cvPhotoMobile from 'images/cvPhotoMobile.png';
+import cvPhotoMobilePL from 'images/cvPhotoMobilePL.png';
 import Footer from 'components/Footer';
 import { useState } from 'react';
 
@@ -56,7 +57,10 @@ const Resume = styled.object`
   }
 `;
 const ResumeMobile = styled.div`
-  background: url('${cvPhotoMobile}') center/cover no-repeat;
+  background: ${(props) =>
+    props.cvChecked
+      ? `url('${cvPhotoMobile}') center/cover no-repeat`
+      : `url('${cvPhotoMobilePL}') center/cover no-repeat`};
   background-size: contain;
   width: 300px;
   height: 450px;
@@ -203,7 +207,7 @@ const CV = () => {
             data={`${cvChecked ? resume : resumePL}#toolbar=0&navpanes=0&scrollbar=0`}
             type="application/pdf"
           />
-          <ResumeMobile />
+          <ResumeMobile cvChecked={cvChecked} />
         </CVContainer>
       </Container>
       <Footer />
