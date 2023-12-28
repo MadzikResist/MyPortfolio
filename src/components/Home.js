@@ -26,7 +26,7 @@ const Container = styled.div`
 const StyledWrapper = styled.div`
   margin-top: 69px;
   gap: 16px;
-  background: url(${background2}) center/cover;
+  background: url(${background2}) center/contain;
   width: 100%;
   padding: 0 10%;
   height: auto;
@@ -146,7 +146,7 @@ const Introduce = styled.div`
   padding-top: 64px;
   background: rgb(23, 6, 38);
   background: linear-gradient(
-    187deg,
+    176deg,
     rgba(23, 6, 38, 1) 0%,
     rgba(45, 13, 74, 1) 52%,
     rgba(98, 34, 145, 1) 98%
@@ -344,7 +344,7 @@ const Home = () => {
             <TypeWriterStyle>
               <Typewriter
                 options={{
-                  strings: ['Frontend Developer'],
+                  strings: ['Full-Stack Developer'],
                   autoStart: true,
                   loop: true,
                   wrapperClassName: 'Writer',

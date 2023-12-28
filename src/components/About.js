@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import StarsComponent from 'components/Stars';
 import Nav from 'components/Nav';
-import myPhoto from 'images/myPhoto.jpg';
+import myPhoto from 'images/myPhoto.png';
 import Footer from 'components/Footer';
 import { useEffect } from 'react';
 
@@ -103,17 +103,14 @@ const PhotoContainer = styled.div`
 `;
 const MyPhoto = styled.div`
   background: url(${myPhoto}) center/cover no-repeat;
-  background-size: contain;
+  background-color: transparent;
   margin-top: 32px;
   height: 290px;
   width: 190px;
   position: relative;
   z-index: 15;
   border: 1px solid white;
-  border-radius: 10px;
-  -webkit-box-shadow: -1px -4px 77px -1px rgba(103, 11, 133, 1);
-  -moz-box-shadow: -1px -4px 77px -1px rgba(103, 11, 133, 1);
-  box-shadow: -1px -4px 77px -1px rgba(103, 11, 133, 1);
+
   @media (min-width: 768px) {
     left: 0;
     transform: translateX(0);
@@ -122,12 +119,12 @@ const MyPhoto = styled.div`
     width: 200px;
     height: 305px;
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 1000px) {  
     left: 0;
     transform: translateX(0);
     margin-left: 32px;
     width: 280px;
-    height: 430px;
+    height: 330px;
   }
 `;
 const ExperienceContainer = styled.div`
@@ -270,11 +267,11 @@ const About = () => {
           </Title>
           <ExperienceBox>
             <TextBox>
-              <TitleExperience>Internship </TitleExperience>
-              <TextPractice>Full-Stack Developer</TextPractice>
-              <TitleCity>Poznań- 2022</TitleCity>
+              <TitleExperience>Meetz</TitleExperience>
+              <TextPractice>Co-Founder</TextPractice>
+              <TitleCity>Poznań | 2021- Now</TitleCity>
               <InfoJobContainer>
-                <InfoJob>Backend and Frontend website development.</InfoJob>
+                <InfoJob>Creating a mobile application to make friends</InfoJob>
               </InfoJobContainer>
             </TextBox>
           </ExperienceBox>
@@ -282,9 +279,19 @@ const About = () => {
             <TextBox>
               <TitleExperience>Codeally </TitleExperience>
               <TextPractice>Full-Stack Developer</TextPractice>
-              <TitleCity>Remote- 2022</TitleCity>
+              <TitleCity>Remote | 2022</TitleCity>
               <InfoJobContainer>
                 <InfoJob>Supporting development of software engineers hiring platform</InfoJob>
+              </InfoJobContainer>
+            </TextBox>
+          </ExperienceBox>
+          <ExperienceBox>
+            <TextBox>
+              <TitleExperience>Internship </TitleExperience>
+              <TextPractice>Full-Stack Developer</TextPractice>
+              <TitleCity>Poznań | 2022</TitleCity>
+              <InfoJobContainer>
+                <InfoJob>Backend and Frontend website development.</InfoJob>
               </InfoJobContainer>
             </TextBox>
           </ExperienceBox>
