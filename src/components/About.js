@@ -251,9 +251,16 @@ const About = () => {
               <Text>
                 Hi! I am <span style={{ color: '#caa1d6' }}>Magdalena Szpitalna </span>from
                 <span style={{ color: '#caa1d6' }}> Poznań.</span> <br />
-                <br />I am 22-year-old ICT student at University of Technology in Poznań. <br />
+
                 <br />
-                In my spare time I play the piano and computer games.
+                I am 23 years old and I am an IT enthusiast ready for new challenges in the field of programming.
+                <br /> <br />
+                My skills include experience in React and Node.js technologies. I combine acquired programming skills
+                with a creative approach to projects.
+                <br /> <br />
+                I possess flexibility in problem-solving and the ability to quickly grasp new concepts. I am ready to
+                join a team where I can effectively utilize my skills and collaboratively create innovative solutions
+
               </Text>
             </TextContainer>
             <PhotoContainer>

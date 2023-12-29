@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import StarsComponent from 'components/Stars';
 import Footer from 'components/Footer';
 import styled from 'styled-components';
@@ -26,7 +26,8 @@ const Container = styled.div`
 const StyledWrapper = styled.div`
   margin-top: 69px;
   gap: 16px;
-  background: url(${background2}) center/contain;
+  // background: url(${background2}) center/contain;
+    background:  rgba(23, 6, 38, 1) 0%;
   width: 100%;
   padding: 0 10%;
   height: auto;
@@ -54,8 +55,11 @@ const Title = styled.p`
   font-size: 1.2rem;
   position: relative;
   z-index: 10;
+    margin-bottom: 0;
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
+      
+      
   }
 `;
 const Name = styled.h1`
@@ -63,6 +67,9 @@ const Name = styled.h1`
   font-size: 2rem;
   position: relative;
   z-index: 10;
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
 `;
 const TextContainer = styled.div`
   position: relative;
@@ -97,12 +104,12 @@ const TypeWriterStyle = styled.h1`
   font-size: 1.5rem;
   font-weight: 200;
   opacity: 40%;
-  margin-top: 8vh;
+  margin-top: 4vh;
   @media (min-width: 768px) {
     font-size: 1.8rem;
   }
   @media (min-width: 1200px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 const Photo = styled.div`
@@ -313,23 +320,32 @@ const Icon = styled.svg`
 `;
 const Home = () => {
   const form = useRef();
-
+  const [emailSent, setEmailSent] = useState(false)
+  const [fillData, setFillData] = useState(false)
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_97md4wc', 'template_bvivkch', form.current, 'J8sozXzUAlWcNHh6S').then(
-      (result) => {
-        console.log(result.text);
-        console.log('message sent');
-      },
-      (error) => {
-        console.log(error.text);
-      },
-    );
+    console.log(form.current.user_email.value)
+    if(form.current.user_email.value && form.current.user_name.value && form.current.message.value){
+      emailjs.sendForm('service_97md4wc', 'template_bvivkch', form.current, 'J8sozXzUAlWcNHh6S').then(
+        (result) => {
+          console.log(result.text);
+          console.log('message sent');
+          setEmailSent(true)
+          setFillData(false)
+          form.current.reset()
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+    }
+    else{
+      setFillData(true)
+    }
   };
 
   return (
@@ -403,9 +419,11 @@ const Home = () => {
                 <input type="email" name="user_email" />
                 <label>Message</label>
                 <textarea name="message" />
-                <input type="submit" value="Send" />
+                <input type="submit" value={emailSent ? "Email Sent" : "Send"} />
               </form>
             </StyledContactForm>
+            {fillData ? <h3 style={{color: '#B2B2B2'}}>Fields cannot be empty</h3> : emailSent && !fillData ? <h3 style={{color: 'white'}}>Thank you!</h3> : <></>}
+
           </Contact>
         </Introduce>
       </Container>
