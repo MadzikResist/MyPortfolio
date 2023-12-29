@@ -38,7 +38,7 @@ const StyledWrapper = styled.div`
     justify-content: center;
     width: 100%;
     margin-top: 0;
-    background: url(${background2}) center/cover;
+    background: url(${background2}) center/contain;
     height: 80vh;
   }
   @media (min-width: 1200px) {
