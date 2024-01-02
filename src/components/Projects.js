@@ -7,6 +7,8 @@ import nicePage2 from 'images/nicePage2.png';
 import pianoGame from 'images/pianoGame.png';
 import nicePage from 'images/nicepage.png';
 import portfolioPhoto from 'images/portfolio.png';
+import gamesPlatform from 'images/gamesPlatform.png';
+import meetz from 'images/meetz.png';
 import Footer from 'components/Footer';
 import { useEffect } from 'react';
 
@@ -175,10 +177,62 @@ const Projects = () => {
           </Title>
           <BoxContainer>
             <ProjectBox>
+              <ProjectImage background={meetz}></ProjectImage>
+              <TitleProject>Meetz</TitleProject>
+              <Description>
+                Mobile application for making new friends<br /><br />
+              </Description>
+              <ButtonsContainer>
+                <a
+                  href="https://play.google.com/store/apps/details?id=life.meetz"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Play Store</Button>
+                </a>
+                <a
+                  href="https://meetz.life/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Website</Button>
+                </a>
+              </ButtonsContainer>
+            </ProjectBox>
+            <ProjectBox>
+              <ProjectImage background={gamesPlatform}></ProjectImage>
+              <TitleProject>Games Platform</TitleProject>
+              <Description>
+                An application that searches for a recipe based on the user's ingredients
+              </Description>
+              <ButtonsContainer>
+                <a
+                  href="https://github.com/MadzikResist/Games-Platform"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Github Frontend</Button>
+                </a>
+                <a
+                  href="https://github.com/MadzikResist/Games-Platform-API"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Github Backend</Button>
+                </a>
+                <a
+                  href="https://madzikresist.github.io/Games-Platform/#/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Website</Button>
+                </a>
+              </ButtonsContainer>
+            </ProjectBox>
+            <ProjectBox>
               <ProjectImage background={recipeFinderScreen}></ProjectImage>
               <TitleProject>Recipe Finder</TitleProject>
               <Description>
-                {/*An application allows to find a recipe based on the owned ingredients.*/}
                 An application that searches for a recipe based on the user's ingredients
               </Description>
               <ButtonsContainer>
