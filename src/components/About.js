@@ -183,11 +183,6 @@ const InfoJob = styled.p`
   }
 `;
 
-
-const TitleSkill = styled.h2`
-  color: white;
-  text-align: center;
-`;
 const SkillSetContainer = styled.div`
   width: 100%;
   display: grid;
