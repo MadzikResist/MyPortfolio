@@ -203,7 +203,7 @@ const Projects = () => {
               <ProjectImage background={gamesPlatform}></ProjectImage>
               <TitleProject>Games Platform</TitleProject>
               <Description>
-                An application that searches for a recipe based on the user's ingredients
+                An application that helps you find fun games you'll like by considering what you enjoy playing
               </Description>
               <ButtonsContainer>
                 <a
