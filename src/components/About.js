@@ -301,7 +301,7 @@ const About = () => {
             <TextBox>
               <TitleExperience>Codeally </TitleExperience>
               <TextPractice>Full-Stack Developer</TextPractice>
-              <TitleCity>Remote | 2022</TitleCity>
+              <TitleCity>Remote | 12.2022-12.2023</TitleCity>
               <InfoJobContainer>
                 <InfoJob>Supporting development of software engineers hiring platform</InfoJob>
               </InfoJobContainer>
@@ -311,7 +311,7 @@ const About = () => {
             <TextBox>
               <TitleExperience>Internship </TitleExperience>
               <TextPractice>Full-Stack Developer</TextPractice>
-              <TitleCity>Poznań | 2022</TitleCity>
+              <TitleCity>Poznań | 06.2022-09.2022</TitleCity>
               <InfoJobContainer>
                 <InfoJob>Backend and Frontend website development.</InfoJob>
               </InfoJobContainer>
