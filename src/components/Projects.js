@@ -9,6 +9,7 @@ import nicePage from 'images/nicepage.png';
 import portfolioPhoto from 'images/portfolio.png';
 import gamesPlatform from 'images/gamesPlatform.png';
 import meetz from 'images/meetz.png';
+import todo from 'images/to-do.png';
 import Footer from 'components/Footer';
 import { useEffect } from 'react';
 
@@ -260,6 +261,38 @@ const Projects = () => {
               </ButtonsContainer>
             </ProjectBox>
             <ProjectBox>
+              <ProjectImage background={todo}></ProjectImage>
+              <TitleProject>To Do App</TitleProject>
+              <Description>
+                An application allowing you to add your tasks to the list
+              </Description>
+              <ButtonsContainer>
+                <a
+                  href="https://github.com/MadzikResist/ToDo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Github Frontend</Button>
+                </a>
+                <a
+                  href="https://github.com/MadzikResist/ToDo-API"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Github Backend</Button>
+                </a>
+                <a
+                  href="https://madzikresist.github.io/ToDo/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Website</Button>
+                </a>
+              </ButtonsContainer>
+            </ProjectBox>
+
+            <ProjectBox>
+
               <ProjectImage background={pianoGame}></ProjectImage>
               <TitleProject>Piano Game</TitleProject>
               <Description>
