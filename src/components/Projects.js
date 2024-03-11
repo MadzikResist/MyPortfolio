@@ -3,13 +3,12 @@ import StarsComponent from 'components/Stars';
 import Nav from 'components/Nav';
 import styled from 'styled-components';
 import recipeFinderScreen from 'images/recipeFinderScreen.png';
-import nicePage2 from 'images/nicePage2.png';
 import pianoGame from 'images/pianoGame.png';
-import nicePage from 'images/nicepage.png';
 import portfolioPhoto from 'images/portfolio.png';
 import gamesPlatform from 'images/gamesPlatform.png';
 import meetz from 'images/meetz.png';
 import todo from 'images/to-do.png';
+import shopbackground from 'images/shop-background.png'
 import Footer from 'components/Footer';
 import { useEffect } from 'react';
 
@@ -201,6 +200,29 @@ const Projects = () => {
               </ButtonsContainer>
             </ProjectBox>
             <ProjectBox>
+              <ProjectImage background={shopbackground}></ProjectImage>
+              <TitleProject>Shop</TitleProject>
+              <Description>Online clothing store (work in progress)
+                <br /><br />
+              </Description>
+              <ButtonsContainer>
+                <a
+                  href="https://github.com/MadzikResist/shop"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Github</Button>
+                </a>
+                <a
+                  href="https://madzikresist.github.io/shop/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Website</Button>
+                </a>
+              </ButtonsContainer>
+            </ProjectBox>
+            <ProjectBox>
               <ProjectImage background={gamesPlatform}></ProjectImage>
               <TitleProject>Games Platform</TitleProject>
               <Description>
@@ -312,44 +334,6 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   <Button>YouTube</Button>
-                </a>
-              </ButtonsContainer>
-            </ProjectBox>
-            <ProjectBox>
-              <ProjectImage background={nicePage2}></ProjectImage>
-              <TitleProject>Boost Your Brand</TitleProject>
-              <Description>Website inspired by the found layout</Description>
-              <ButtonsContainer>
-                <a
-                  href="https://github.com/MadzikResist/NicePage2"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Github</Button>
-                </a>
-                <a
-                  href="https://madzikresist.github.io/NicePage2/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Website</Button>
-                </a>
-              </ButtonsContainer>
-            </ProjectBox>
-            <ProjectBox>
-              <ProjectImage background={nicePage}></ProjectImage>
-              <TitleProject>Boost Your Brand</TitleProject>
-              <Description>Website inspired by the found layout</Description>
-              <ButtonsContainer>
-                <a
-                  href="https://github.com/MadzikResist/NicePage2"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>Github</Button>
-                </a>
-                <a href="https://madzikresist.github.io/NicePage/" target="_blank" rel="noreferrer">
-                  <Button>Website</Button>
                 </a>
               </ButtonsContainer>
             </ProjectBox>
