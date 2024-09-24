@@ -214,7 +214,7 @@ const Projects = () => {
                   <Button>Github</Button>
                 </a>
                 <a
-                  href="https://madzikresist.github.io/shop/"
+                  href="https://madzikresist.github.io"
                   target="_blank"
                   rel="noreferrer"
                 >

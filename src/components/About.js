@@ -268,7 +268,7 @@ const About = () => {
                 <span style={{ color: '#caa1d6' }}> Poznań.</span> <br />
 
                 <br />
-                I am 23 years old and I am an IT enthusiast ready for new challenges in the field of programming.
+                I am 24 years old and I am an IT enthusiast ready for new challenges in the field of programming.
                 <br /> <br />
                 My skills include experience in React and Node.js technologies. I combine acquired programming skills
                 with a creative approach to projects.
@@ -291,7 +291,7 @@ const About = () => {
             <TextBox>
               <TitleExperience>Meetz</TitleExperience>
               <TextPractice>Co-Founder</TextPractice>
-              <TitleCity>Poznań | 2021- Now</TitleCity>
+              <TitleCity>Poznań | 08.2023- Now</TitleCity>
               <InfoJobContainer>
                 <InfoJob>Creating a mobile application to make friends</InfoJob>
               </InfoJobContainer>
@@ -301,7 +301,7 @@ const About = () => {
             <TextBox>
               <TitleExperience>Codeally </TitleExperience>
               <TextPractice>Full-Stack Developer</TextPractice>
-              <TitleCity>Remote | 12.2022-12.2023</TitleCity>
+              <TitleCity>Remote | 12.2022-11.2023</TitleCity>
               <InfoJobContainer>
                 <InfoJob>Supporting development of software engineers hiring platform</InfoJob>
               </InfoJobContainer>

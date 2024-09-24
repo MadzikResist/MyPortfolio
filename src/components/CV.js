@@ -3,7 +3,7 @@ import StarsComponent from 'components/Stars';
 import Nav from 'components/Nav';
 import styled from 'styled-components';
 import resume from 'images/Magdalena Szpitalna CV.pdf';
-import resumePL from 'images/Magdalena Szpitalna CV_PL.pdf';
+import resumePL from 'images/CV Magdalena Szpitalna.pdf';
 import cvPhotoMobile from 'images/cvPhotoMobile.png';
 import cvPhotoMobilePL from 'images/cvPhotoMobilePL.png';
 import Footer from 'components/Footer';
